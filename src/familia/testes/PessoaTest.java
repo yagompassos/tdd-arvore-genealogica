@@ -19,7 +19,7 @@ public class PessoaTest {
 		Pessoa joao = Pessoa.criar("João", "Silva");
 		Pessoa henrique = Pessoa.criar("Henrique", "Silva");
 		joao.addFilho(henrique);
-		assertEquals("Henrique", joao.getFilhos[0].getNome());
+		assertTrue(joao.getFilhos().contains(henrique));
 	}
 	
 }
